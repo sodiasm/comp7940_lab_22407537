@@ -1,0 +1,13 @@
+name: my-actions # the name of this work flow
+on: [push]
+jobs: # gather all the jobs that run in the workflow
+    my-helloworld-job:
+        runs-on: ubuntu-latest # Set the type of machine to run on
+    steps:
+        - uses: actions/checkout@v2 # Step 1: Checks out a copy of your repository on the ubuntu-latest machine
+    - name: Say Hello World # Step 2: Type the word 'Hello World'
+        run: echo 'Hello World'
+    - name: View a file # Step 3: Two sub-steps involved
+        run: |
+            echo 'Viewing the file: '
+            cat requirements.txt
