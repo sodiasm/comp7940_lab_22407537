@@ -1,6 +1,6 @@
 name: my-actions # the name of this work flow
 on: [push]
-jobs: # gather all the jobs that run in the workflow
+jobs:
     my-helloworld-job:
         runs-on: ubuntu-latest # Set the type of machine to run on
     steps:
