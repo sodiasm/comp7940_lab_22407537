@@ -11,7 +11,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Check Python security
-        uses: aufdenpunkt/python-safety-check@v2
+        uses: aufdenpunkt/python-safety-check@master
         with:
           path: ./
       - name: Deploy
