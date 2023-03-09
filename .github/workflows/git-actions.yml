@@ -10,9 +10,7 @@ steps:
 - uses: actions/checkout@v2
 with:
 fetch-depth: 0
-
-- name: deploy
-
+- name: Deploy
 env:
 HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
 HEROKU_APP_NAME: comp7940bu2023student22407537
